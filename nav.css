@@ -53,7 +53,7 @@ ul a.active {
   font-weight: bolder;
 }
 
-[data-testid="dashboard-link"] {
+[data-testid="aboutMe"] {
   color: rgb(70, 69, 66);
   font-weight: 600;
 }

@@ -18,7 +18,7 @@
       <div class="navbar">
         <h3 style="color: white">SeshDev</h3>
         <ul>
-          <a href="#about" class="" data-testid="aboutMe"><li>About</li></a>
+          <a href="#about" class="about" data-testid="aboutMe"><li>About</li></a>
           <a href="#goals" data-testid="goals"><li>Goals</li></a>
           <a href="#contact" data-testid="contact"><li>Contact</li></a>
         </ul>
@@ -53,7 +53,8 @@
         </h2>
         <br />
         <br />
-        <div class="image-container">
+        <div data-testid="imageBgBorder">
+            <!-- Natural Dimension of image: width:248px;  height:265px; -->
           <img
             src="/assets/prof_img1.jpeg"
             alt="my profile picture"
@@ -76,14 +77,12 @@
           </div>
           <a href="" data-testid="slackEmail">oluwaseyiotakoya@gmail.com</a>
           <br />
-
-        
         </div>
       </div>
 
       <div class="content2" id="goals">
         <div class="goals-bg">
-          <h1 class="goals">My Goals in the next two years in technology</h1>
+          <h1 data-testid="goals">My Goals in the next two years in technology</h1>
         </div>
 
         <p>
