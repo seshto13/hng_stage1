@@ -10,54 +10,14 @@ body {
   align-items: center;
 }
 
-nav {
-  background-color: goldenrod;
-  width: 100%;
-  height: 70px;
+[data-testid="utc-time"],
+[data-testid="utc-day"] {
   color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  z-index: 5;
+  margin: 10px;
 }
 
-.navbar {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  gap: 150px;
-  /* border-bottom: 2px solid gray; */
-}
-
-.navbar h3 {
-  color: black;
-}
-
-ul {
-  width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  list-style-type: none;
-  font-size: 18px;
-}
-ul a {
-  text-decoration: none;
-  color: black;
-}
-
-ul a:hover {
-  text-decoration: none;
-  color: white;
-}
-
-ul a.active {
-  color: black;
-  font-size: 19px;
-  font-weight: bolder;
+.aboutDetails {
+  line-height: 0px;
 }
 
 .content {
@@ -67,6 +27,7 @@ ul a.active {
   align-items: center;
   margin-top: 80px;
 }
+
 .content1,
 .content2 {
   width: 80%;
@@ -75,18 +36,17 @@ ul a.active {
 .image-container {
   display: flex;
   border: 7px solid goldenrod;
-  width: 250px;
+  width: 245px;
   height: 250px;
   position: relative;
 }
 
-.my-image {
-  width: 250px;
-  height: 265px;
-  margin: 20px 20px;
+[data-testid="slackProfilePicture"] {
   position: absolute;
-  bottom: -5px;
+  left: 10px;
+  bottom: 8px;
 }
+
 .goals-bg {
   background-color: goldenrod;
   width: 75%;
@@ -106,9 +66,7 @@ ul a.active {
   font-size: 36px;
 }
 
-
 .goals:hover {
- 
   color: white;
   border: 2px solid goldenrod;
 }
@@ -117,20 +75,57 @@ p {
   line-height: 35px;
 }
 
+[data-testid="slackEmail"] {font-size: 20px;}
+
 h1,
-h3 {
+h3
+{
   color: white;
   font-size: 24px;
 }
-.seyi,
+
+[data-testid="slackDisplayName"],
 .web {
   color: goldenrod;
   font-size: 28px;
 }
 
-.navbar h2:hover {
-  color: rgb(255, 213, 0);
-  font-size: 28px;
+.links {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  background-color: goldenrod;
+  border-radius: 10px;
+  padding: 20px 15px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  z-index: 3;
+}
+
+[data-testid="hngLink"],
+[data-testid="keywordLink"],
+[data-testid="scrapeanywebLink"] {
+  color: white;
+  list-style-type: none;
+  gap: 10px;
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+}
+
+[data-testid="hngLink"]:hover,
+[data-testid="keywordLink"]:hover,
+[data-testid="scrapeanywebLink"]:hover {
+  color: black;
+}
+
+[data-testid="slackEmail"] {
+  text-decoration: none;
+  color: white;
+  list-style-type: none;
 }
 
 .content1 {
@@ -157,6 +152,7 @@ h3 {
   font-size: 24px;
   color: white;
   text-align: left;
+  
 }
 
 /* .content2 .goal-heading li:hover,
@@ -174,9 +170,10 @@ p {
   font-size: 2px;
 }
 .footer {
+  bottom: 0;
   background-color: azure;
   width: 100%;
-  height: 100px;
+  height: 80px;
   color: black;
   display: flex;
   flex-direction: column;
@@ -185,9 +182,13 @@ p {
   padding-top: 10px;
 }
 
-@media (max-width: 600px) {
-  .navbar {
-    gap: 1px;
+@media (max-width: 1000px) {
+  [data-testid="hngLink"],
+  [data-testid="keywordLink"],
+  [data-testid="scrapeanywebLink"] {
+    color: white;
+    list-style-type: none;
+    gap: 3px;
   }
 
   .content {

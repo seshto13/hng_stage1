@@ -1,109 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="shortcut icon" type="image/jpg" href="/assets/prof_pix.jpeg"/>
-</head>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./nav.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="shortcut icon" type="image/jpg" href="/assets/prof_pix.jpeg" />
+  </head>
 
-<body>
+  <body>
     <nav>
-        <div class="navbar">
-        <h3 style="color: white;">SeshDev</h3>
+      <div class="navbar">
+        <h3 style="color: white">SeshDev</h3>
         <ul>
-            <a href="#about" class="active"><li>About</li></a>
-            <a href="#goals"><li>Goals</li></a>
-            <a href="#contact"><li>Contact</li></a>
+          <a href="#about" class="" data-testid="aboutMe"><li>About</li></a>
+          <a href="#goals" data-testid="goals"><li>Goals</li></a>
+          <a href="#contact" data-testid="contact"><li>Contact</li></a>
         </ul>
-    </div>
-        
+      </div>
     </nav>
 
     <div class="content">
-    <div class="content1" id="about"><h1>About Me</h1>
-        <br/>
-        <br/>
-<div class="image-container">
-        <img src="/assets/prof_pix.jpeg" alt="" class="my-image">
-    </div>
-    <br/>
-   <div style="text-align: center;">
-    <h2>I am <span class="seyi">Oluwaseyi Tommy</span></h2>
-    <p style="text-align: center; font-weight: 300; font-size: 20px;">I am a Frontend Developer</p>
-    <p>
-        As a front-end developer, I thrive at the intersection of creativity and technology, sculpting digital experiences that captivate and engage users. With a foundation built on HTML, CSS, and JavaScript, I craft intuitive interfaces that not only look sleek but also function seamlessly across devices and platforms.</p>
-       <p>Above all, I am driven by the impact of my work. I find fulfillment in transforming complex ideas into intuitive interfaces that enhance user experiences and achieve business objectives. As a front-end developer, I am dedicated to pushing boundaries, solving challenges, and crafting digital solutions that resonate and inspire</p>
-    
-    </div>
-</div>
+        <div data-testid="utc-time"></div>
+        <div data-testid="utc-day"></div>
 
-    <div class="content2" id="goals">
+        <div class="links">
+            <a
+              href="http://hng.tech/learn"
+              data-testid="hngLink"
+              target="_blank"
+              ><li>HNG</li></a
+            >
+            <a
+              href="http://keyword.dog"
+              data-testid="keywordLink"
+              target="_blank"
+              ><li>Keyword</li></a
+            >
+            <a
+              href="http://scrapeanyweb.site/"
+              data-testid="scrapeanywebLink"
+              target="_blank"
+              ><li>Scrape</li></a
+            >
+          </div>
+
+      <div class="content1" id="about">
+        <h1>About Me</h1>
+        <br />
+        <br />
+        <div class="image-container">
+          <img
+            src="/assets/prof_img1.jpeg"
+            alt="my profile picture"
+            data-testid="slackProfilePicture"
+          />
+        </div>
+        <br />
+
+        <div style="text-align: center">
+            <div class="aboutDetails">
+          <h2>
+            I am
+            <span class="seyi" data-testid="slackDisplayName"
+         >Oluwaseyi Tommy</span>
+          </h2>
+          <p style="text-align: center; font-weight: 300; font-size: 20px">
+            I am a Frontend Developer
+          </p>
+          <a href="" data-testid="slackEmail">oluwaseyiotakoya@gmail.com</a>
+        </div>
+          <br />
+          
+
+          <p>
+            As a front-end developer, I thrive at the intersection of creativity
+            and technology, sculpting digital experiences that captivate and
+            engage users. With a foundation built on HTML, CSS, and JavaScript,
+            I craft intuitive interfaces that not only look sleek but also
+            function seamlessly across devices and platforms.
+          </p>
+
+          <p>
+            Above all, I am driven by the impact of my work. I find fulfillment
+            in transforming complex ideas into intuitive interfaces that enhance
+            user experiences and achieve business objectives. As a front-end
+            developer, I am dedicated to pushing boundaries, solving challenges,
+            and crafting digital solutions that resonate and inspire
+          </p>
+        </div>
+      </div>
+
+      <div class="content2" id="goals">
         <div class="goals-bg">
-    <h1 class="goals">My Goals in the next two years in technology</h1></div>
-   
-       <p>My goals as a frontend developer in technology would generally revolve around growth, impact, and staying current with industry trends. Below is an outline of those goals:</p> 
-       
- <ol class="goal-heading">      
-<li>Skill Development:</li>
+          <h1 class="goals">My Goals in the next two years in technology</h1>
+        </div>
 
-<ol class="skill">
-<li>Advanced Proficiency in Modern Frameworks: Strengthen skills in frameworks like React.js, Angular, or Vue.js to build robust and scalable applications.</li>
-<br>
-<br>
-<li>Responsive Design: Become an expert in responsive design principles and frameworks (Bootstrap,tailwind ) to ensure optimal user experience across devices.
-UX/UI Understanding:</li>
-</ol>
-<br>
-<li>User-Centric Design:</li> <p>Gain a deeper understanding of UX/UI principles and best practices to create intuitive and user-friendly interfaces.</p>
+        <p>
+          My goals as a frontend developer in technology would generally revolve
+          around growth, impact, and staying current with industry trends. Below
+          is an outline of those goals:
+        </p>
 
-<br>
-<li>API Integration:</li> <p>Learn how to efficiently integrate frontend applications with backend services and RESTful APIs.
-</p>
+        <ol class="goal-heading">
+          <li>Skill Development:</li>
 
-<br>
-<li>Git Proficiency:</li> <p>Improve Git skills for version control, branching strategies, and collaborative development using platforms like GitHub or GitLab.</p>
+          <ol class="skill">
+            <li>
+              Advanced Proficiency in Modern Frameworks: Strengthen skills in
+              frameworks like React.js, Angular, or Vue.js to build robust and
+              scalable applications.
+            </li>
+            <br />
+            <br />
+            <li>
+              Responsive Design: Become an expert in responsive design
+              principles and frameworks (Bootstrap,tailwind ) to ensure optimal
+              user experience across devices. UX/UI Understanding:
+            </li>
+          </ol>
+          <br />
+          <li>User-Centric Design:</li>
+          <p>
+            Gain a deeper understanding of UX/UI principles and best practices
+            to create intuitive and user-friendly interfaces.
+          </p>
 
-<br>
-<li>Stay Updated:</li><p> Keep abreast of industry trends, new frontend technologies, and best practices through blogs, online courses, and attending tech conferences.</p>
-<br>
-<br>
-<li>Communication:</li> <p>Enhance communication skills to effectively collaborate with designers, backend developers, and stakeholders.</p>
-<br>
-<br>
-<li>Problem-Solving:</li> <p>Develop strong problem-solving abilities to tackle complex frontend challenges and contribute to innovative solutions.</p>
+          <br />
+          <li>API Integration:</li>
+          <p>
+            Learn how to efficiently integrate frontend applications with
+            backend services and RESTful APIs.
+          </p>
 
-<br>
-<br>
-    <h1 style="font-size: 30px; text-align: left;" >Conclusion</h1>
-<p>By focusing on these areas over the next two years, I aim to become a well-rounded frontend developer capable of building sophisticated, user-friendly applications that meet both technical requirements and user expectations in a rapidly evolving technological landscape.
-</p>
+          <br />
+          <li>Git Proficiency:</li>
+          <p>
+            Improve Git skills for version control, branching strategies, and
+            collaborative development using platforms like GitHub or GitLab.
+          </p>
 
-</ol> 
+          <br />
+          <li>Stay Updated:</li>
+          <p>
+            Keep abreast of industry trends, new frontend technologies, and best
+            practices through blogs, online courses, and attending tech
+            conferences.
+          </p>
+          <br />
+          <br />
+          <li>Communication:</li>
+          <p>
+            Enhance communication skills to effectively collaborate with
+            designers, backend developers, and stakeholders.
+          </p>
+          <br />
+          <br />
+          <li>Problem-Solving:</li>
+          <p>
+            Develop strong problem-solving abilities to tackle complex frontend
+            challenges and contribute to innovative solutions.
+          </p>
 
-
-  
+          <br />
+          <br />
+          <h1 style="font-size: 30px; text-align: left">Conclusion</h1>
+          <p>
+            By focusing on these areas over the next two years, I aim to become
+            a well-rounded frontend developer capable of building sophisticated,
+            user-friendly applications that meet both technical requirements and
+            user expectations in a rapidly evolving technological landscape.
+          </p>
+        </ol>
+      </div>
     </div>
-  
-    </div>
+
     <div>
-    <a href="#top"><i class="fa-solid fa-arrow-up" style="color:black; font-size: large; background-color: gold; padding: 6px; margin: 8px; justify-content: left;"></i></a>
-</div>
+      <a href="#top"
+        ><i
+          class="fa-solid fa-arrow-up"
+          style="
+            color: black;
+            font-size: large;
+            background-color: gold;
+            padding: 6px;
+            margin: 8px;
+            justify-content: left;
+          "
+        ></i
+      ></a>
+    </div>
+    <br><br>
     <div class="footer" id="contact">
-        
-          <div>
-          <a href="#"><i class="fa-brands fa-facebook-f" style="color: goldenrod; font-weight: 400;"></i></a>
-          <a href="#"><i class="fa-brands fa-instagram" style="color: goldenrod; font-weight: 400; margin-left: 5px;"></i></a>
-          <a href="#"><i class="fa-brands fa-twitter" style="color: goldenrod; font-weight: 400; margin-left: 5px;"></i></a>
-        </div>
+      <div>
+        <a href="#"
+          ><i
+            class="fa-brands fa-facebook-f"
+            style="color: goldenrod; font-weight: 400"
+          ></i
+        ></a>
+        <a href="#"
+          ><i
+            class="fa-brands fa-instagram"
+            style="color: goldenrod; font-weight: 400; margin-left: 5px"
+          ></i
+        ></a>
+        <a href="#"
+          ><i
+            class="fa-brands fa-twitter"
+            style="color: goldenrod; font-weight: 400; margin-left: 5px"
+          ></i
+        ></a>
+      </div>
 
-          <p style="color: black; font-size: 14px;">© 2024 Oluwaseyi Tommy </p>
-        </div>
+      <p style="color: black; font-size: 14px">© 2024 Oluwaseyi Tommy</p>
+    </div>
 
-     
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
