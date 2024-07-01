@@ -10,8 +10,8 @@ body {
   align-items: center;
 }
 
-[data-testid="utc-time"],
-[data-testid="utc-day"] {
+[data-testid="currentTimeUTC"],
+[data-testid="currentDay"] {
   color: white;
   margin: 10px;
 }
@@ -76,34 +76,41 @@ p {
   line-height: 35px;
 }
 
-[data-testid="slackEmail"] {font-size: 20px;}
-
 h1,
-h3
-{
+h3 {
   color: white;
   font-size: 24px;
 }
 
-[data-testid="slackDisplayName"],
+[data-testid="Name"],
 .web {
   color: goldenrod;
   font-size: 28px;
 }
 
+[data-testid="slackDisplayName"],
+.web {
+  color: goldenrod;
+  font-size: 24px;
+}
+
+[data-testid="slackEmail"] {
+  text-decoration: none;
+  color: gold;
+  list-style-type: none;
+  font-size: 20px;
+  padding-top: 10px;
+}
+
 .links {
+  width: 80%;
   display: flex;
-  flex-direction: column; 
   align-items: center;
   justify-content: space-between;
   gap: 10px;
-  background-color: goldenrod;
   border-radius: 10px;
   padding: 20px 15px;
-  position: fixed;
-  right: 0;
-  top: 15%;
-  z-index: 3;
+  
 }
 
 [data-testid="hngLink"],
@@ -114,19 +121,13 @@ h3
   gap: 10px;
   font-size: 18px;
   text-decoration: none;
-  color: white;
+  
 }
 
 [data-testid="hngLink"]:hover,
 [data-testid="keywordLink"]:hover,
 [data-testid="scrapeanywebLink"]:hover {
-  color: black;
-}
-
-[data-testid="slackEmail"] {
-  text-decoration: none;
-  color: white;
-  list-style-type: none;
+  color: goldenrod;
 }
 
 .content1 {
@@ -153,7 +154,6 @@ h3
   font-size: 24px;
   color: white;
   text-align: left;
- 
 }
 
 /* .content2 .goal-heading li:hover,
@@ -167,9 +167,7 @@ p {
   font-size: 20px;
   text-align: left;
   padding: 0 20px;
- 
 }
-
 
 .footer {
   bottom: 0;
@@ -193,8 +191,6 @@ p {
     top: 18%;
     z-index: 3;
   }
-
-  
 
   [data-testid="hngLink"],
   [data-testid="keywordLink"],
@@ -221,7 +217,6 @@ p {
   .image-container {
     margin: 0, 30px;
   }
-  
 }
 @media (max-width: 400px) {
   .goals {

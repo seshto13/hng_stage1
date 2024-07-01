@@ -24,34 +24,33 @@
         </ul>
       </div>
     </nav>
+    <br />
+    <br />
 
     <div class="content">
-        <div data-testid="utc-time"></div>
-        <div data-testid="utc-day"></div>
+      <div class="links">
+        <a href="http://hng.tech/learn" data-testid="hngLink" target="_blank">
+          <li>HNG</li></a
+        >
+        <a href="http://keyword.dog" data-testid="keywordLink" target="_blank"
+          ><li>Keyword</li></a
+        >
+        <a
+          href="http://scrapeanyweb.site/"
+          data-testid="scrapeanywebLink"
+          target="_blank"
+          ><li>ScrapeanywebLink</li></a
+        >
+      </div>
+      <div data-testid="currentTimeUTC"></div>
 
-        <div class="links">
-            <a
-              href="http://hng.tech/learn"
-              data-testid="hngLink"
-              target="_blank"
-              ><li>HNG</li></a
-            >
-            <a
-              href="http://keyword.dog"
-              data-testid="keywordLink"
-              target="_blank"
-              ><li>Keyword</li></a
-            >
-            <a
-              href="http://scrapeanyweb.site/"
-              data-testid="scrapeanywebLink"
-              target="_blank"
-              ><li>Scrape</li></a
-            >
-          </div>
+      <div data-testid="currentDay"></div>
 
       <div class="content1" id="about">
-        <h1>About Me</h1>
+        <h2>
+          I am
+          <span class="seyi" data-testid="Name">Oluwaseyi Tommy</span>
+        </h2>
         <br />
         <br />
         <div class="image-container">
@@ -64,28 +63,21 @@
         <br />
 
         <div style="text-align: center">
-            <div class="aboutDetails">
-          <h2>
-            I am
-            <span class="seyi" data-testid="slackDisplayName"
-         >Oluwaseyi Tommy</span>
-          </h2>
-          <p style="text-align: center; font-weight: 300; font-size: 20px">
-            I am a Frontend Developer
-          </p>
+          <div class="aboutDetails">
+            <p style="text-align: center; font-weight: 300; font-size: 20px">
+              I am a Frontend Developer
+            </p>
+            <h2>
+              My Slack Name:
+              <span data-testid="slackDisplayName">SeshDev</span>
+            </h2>
+            <br />
+            <br />
+          </div>
           <a href="" data-testid="slackEmail">oluwaseyiotakoya@gmail.com</a>
-        </div>
           <br />
-          
 
-          <p>
-            I thrive at the intersection of creativity
-            and technology, sculpting digital experiences that captivate and
-            engage users. With a foundation built on HTML, CSS, and JavaScript,
-            I craft intuitive interfaces that not only look sleek but also
-            function seamlessly across devices and platforms.
-          </p>
-
+        
         </div>
       </div>
 
@@ -188,7 +180,7 @@
         ></i
       ></a>
     </div>
-    <br><br>
+    <br /><br />
     <div class="footer" id="contact">
       <div>
         <a href="#"
