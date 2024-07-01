@@ -49,11 +49,12 @@ body {
 
 .goals-bg {
   background-color: goldenrod;
-  width: 75%;
-  height: 50px;
+  width: auto;
+  height: auto;
   display: flex;
-  justify-content: center;
+  padding: 0 10px;
   align-items: center;
+  justify-content: center;
   text-align: center;
   border-radius: 20px;
   border: 2px solid white;
@@ -99,9 +100,9 @@ h3
   background-color: goldenrod;
   border-radius: 10px;
   padding: 20px 15px;
-  position: absolute;
+  position: fixed;
   right: 0;
-  top: 50%;
+  top: 15%;
   z-index: 3;
 }
 
@@ -152,7 +153,7 @@ h3
   font-size: 24px;
   color: white;
   text-align: left;
-  
+ 
 }
 
 /* .content2 .goal-heading li:hover,
@@ -165,10 +166,11 @@ p {
   list-style-type: circle;
   font-size: 20px;
   text-align: left;
+  padding: 0 20px;
+ 
 }
-.skill li {
-  font-size: 2px;
-}
+
+
 .footer {
   bottom: 0;
   background-color: azure;
@@ -183,6 +185,17 @@ p {
 }
 
 @media (max-width: 1000px) {
+  .links {
+    gap: 1px;
+    padding: 10px 10px;
+    position: absolute;
+    right: 0;
+    top: 18%;
+    z-index: 3;
+  }
+
+  
+
   [data-testid="hngLink"],
   [data-testid="keywordLink"],
   [data-testid="scrapeanywebLink"] {
@@ -199,7 +212,21 @@ p {
     text-align: center;
   }
 
+  .goals {
+    height: auto;
+    color: black;
+    font-size: 26px;
+  }
+
   .image-container {
     margin: 0, 30px;
+  }
+  
+}
+@media (max-width: 400px) {
+  .goals {
+    height: auto;
+    color: black;
+    font-size: 22px;
   }
 }
